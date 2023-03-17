@@ -1,10 +1,10 @@
   <?php
 
-$a = 'Kushchov';
-$b = 'Mykyta';
-$c = 28;
+$lastname = 'Kushchov';
+$name = 'Mykyta';
+$age = 28;
 
-echo "Привіт! Я $b $a мені $c ";
+echo "Привіт! Я $name $lastname мені $age ";
 
 
 
