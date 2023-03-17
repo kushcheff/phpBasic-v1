@@ -6,6 +6,6 @@ $age = 28;
 
 echo "Привіт! Я $name $lastname мені $age ";
 
-
+?>
 
 
