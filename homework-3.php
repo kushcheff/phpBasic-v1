@@ -2,8 +2,10 @@
 
 $name = 'Mykyta';
 
-if ($name == 'Mykyta') {
-    echo 'зміна існує';
+if (is_string($name) && isset($name)) {
+    echo 'Переменная $name существует';
 } else {
     echo 'NULL';
 }
+
+?>
