@@ -5,6 +5,10 @@ print_r($_POST);
 print_r($_FILES);
 $uploads_dir = 'uploads';
 foreach ($_FILES as $file) {
+    if ($file['error']){
+        echo 'Error';
+        exit;
+    }
 
 $filename = $file['name'];
 $tmp_name = $file['tmp_name'];
