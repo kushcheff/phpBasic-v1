@@ -16,7 +16,13 @@ $sectors = [
     0 => ['id' => 1, 'title' => 'IT'],
     1 => ['id' => 2, 'title' => 'Finance']
 ];
+
+
+
+
 $fullVacancies = [];
+
+
 foreach ($vacancies as $key => $vacancy) {
     foreach ($sectors as $sector) {
         if ($vacancy['sector_id'] === $sector['id']) {
@@ -29,3 +35,16 @@ foreach ($vacancies as $key => $vacancy) {
 echo "<pre>";
 print_r($fullVacancies);
 echo "<pre>";
+
+
+$data = $fullVacancies;
+echo '<table border="1">';
+foreach($data as $row) {
+    echo '<tr>';
+    foreach($row as $cell) {
+        echo '<td>'.$cell.'</td>';
+    }
+    echo '</tr>';
+}
+echo '</table>';
+echo "<link rel='stylesheet' href='css/style.css'>";
