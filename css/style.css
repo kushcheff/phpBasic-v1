@@ -9,3 +9,8 @@ table{
 td{
     color: blue;
 }
+
+table {
+    width: auto;
+    height: auto;
+}
