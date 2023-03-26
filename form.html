@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <form action='/action_form.php' target='_blank' method='post' enctype="multipart/form-data">
+        <h1>Form</h1>
+        <div>
+            <label for="firstName">Name:</label><br>
+            <input type='text' name='firstname' id='firstName'><br>
+            <label for="lastName">Surname:</label><br>
+            <input type='text' name='lastname' id='lastName'><br><br>
+        </div>
+        <h1>Radio</h1>
+        <div>
+            <input type='radio' name='gender' value='male'> Male<br>
+            <input type='radio' name='gender' value='female'> Female<br>
+            <input type='radio' name='gender' value='other'> Other<br>
+        </div>
+        <h1>Checkbox</h1>
+        <div>
+            <input id="html" type="checkbox">
+            <label for="html">Receive newsletter</label><br>
+        </div>
+        <div>
+            <h1>Select</h1>
+            <label for="hobby">Select hobby:</label><br>
+            <select name="hobby" id="hobby">
+                <option value="books">Books</option>
+                <option value="html">Games</option>
+                <option value="css">Drawing</option>
+                <option value="php">Swimming</option>
+                <option value="js">Sewing</option>
+            </select>
+        </div>
+        <div>
+            <h1>File</h1>
+            <label for="myfile">Select files:</label>
+            <input type="file" id="myfile" name="myfile" multiple><br><br>
+            <input type="submit">
+        </div>
+    </form>
+
+</head>
+<body>
+
+</body>
+</html>
