@@ -38,13 +38,24 @@ echo "<pre>";
 
 
 $data = $fullVacancies;
-echo '<table border="1">';
-foreach($data as $row) {
-    echo '<tr>';
-    foreach($row as $cell) {
-        echo '<td>'.$cell.'</td>';
-    }
-    echo '</tr>';
-}
-echo '</table>';
-echo "<link rel='stylesheet' href='css/style.css'>";
+
+?>
+
+<?php if (count($data) > 0): ?>
+<link rel='stylesheet' href='css/style.css'>
+<table border="1">
+  <thead>
+    <tr>
+      <th><?php echo implode('</th><th>', array_keys(current($data))); ?></th>
+    </tr>
+  </thead>
+  <tbody>
+<?php foreach ($data as $row): array_map('htmlentities', $row); ?>
+    <tr>
+      <td><?php echo implode('</td><td>', $row); ?></td>
+    </tr>
+<?php endforeach; ?>
+  </tbody>
+</table>
+
+<?php endif; ?>
