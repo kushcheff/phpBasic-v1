@@ -50,7 +50,7 @@ $data = $fullVacancies;
     </tr>
   </thead>
   <tbody>
-<?php foreach ($data as $row): array_map('htmlentities', $row); ?>
+<?php foreach ($data as $row): $row; ?>
     <tr>
       <td><?php echo implode('</td><td>', $row); ?></td>
     </tr>
